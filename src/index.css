@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #9b59b6;
+  --primary-hover-color: #8e44ad;
+  --secondary-color: #fce6d2;
+  --text-color: #4a235a;
+  --muted-text-color: #6c757d;
+  --border-radius: 10px;
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-focus: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --transition-duration: 0.3s;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
+}
+
+h1 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  box-shadow: var(--box-shadow-light);
+  font-family: inherit; /* Inherit font from body */
+  resize: vertical;
+}
+
+.generate-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 1.5em 4em;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-duration) ease-in-out;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-shadow: var(--box-shadow-light);
+}
+
+.generate-button:hover {
+  background-color: var(--primary-hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.generate-button:focus,
+.generate-button:active {
+  outline: none;
+  background-color: var(--primary-hover-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#answer {
+  font-size: 1.1em;
+  color: var(--muted-text-color);
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #e0e0e0;
+  box-shadow: var(--box-shadow-light);
+  margin-top: 1.5rem;
+  min-height: 3rem;
+}
+img {
+  width: 700px;
+  margin-bottom: 70px;
+}
